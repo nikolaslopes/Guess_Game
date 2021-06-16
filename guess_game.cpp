@@ -10,8 +10,12 @@ int main () {
 
     bool index = true;
 
+    int attempts = 0;
 
     while (index) {
+
+        attempts ++;
+        cout << "Tentativa " << attempts << endl;
 
         int shot_number;
         cout << "Qual o valor do seu chute?";
@@ -37,4 +41,6 @@ int main () {
     cout << "****************" << endl;
     cout << "*** END GAME ***" << endl;
     cout << "****************" << endl;
+
+    cout << "Você acertou o número secreto em " << attempts << " tentativas!" << endl;
 }
