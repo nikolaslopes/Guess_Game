@@ -6,7 +6,7 @@ int main () {
     cout << "* Welcome to the Guess Game *" << endl;
     cout << "*****************************" << endl;
 
-    int secret_number = 69;
+    const int SECRET_NUMBER = 69;
 
     int shot_number;
     cout << "Qual o valor do seu chute?";
@@ -14,10 +14,13 @@ int main () {
 
     cout << "O valor do seu chute é: " << shot_number << endl;
 
-    if (shot_number == secret_number) {
+    bool correct_number = shot_number == SECRET_NUMBER;
+    bool greater_number = shot_number > SECRET_NUMBER;
+
+    if (correct_number) {
         cout << "Parabéns, você acertou o número secreto!" << endl;
     }
-    else if (shot_number > secret_number) {
+    else if (greater_number) {
         cout << "Seu chute foi maior que o número secreto!" << endl;
     }
     else {
