@@ -8,22 +8,33 @@ int main () {
 
     const int SECRET_NUMBER = 69;
 
-    int shot_number;
-    cout << "Qual o valor do seu chute?";
-    cin >> shot_number;
+    bool index = true;
 
-    cout << "O valor do seu chute é: " << shot_number << endl;
 
-    bool correct_number = shot_number == SECRET_NUMBER;
-    bool greater_number = shot_number > SECRET_NUMBER;
+    while (index) {
 
-    if (correct_number) {
-        cout << "Parabéns, você acertou o número secreto!" << endl;
+        int shot_number;
+        cout << "Qual o valor do seu chute?";
+        cin >> shot_number;
+
+        cout << "O valor do seu chute é: " << shot_number << endl;
+
+        bool correct_number = shot_number == SECRET_NUMBER;
+        bool greater_number = shot_number > SECRET_NUMBER;
+
+        if (correct_number) {
+            cout << "Parabéns, você acertou o número secreto!" << endl;
+            index = false;
+        }
+        else if (greater_number) {
+            cout << "Seu chute foi maior que o número secreto!" << endl;
+        }
+        else {
+            cout << "Seu chute foi menor que o número secreto!" << endl;
+        }
     }
-    else if (greater_number) {
-        cout << "Seu chute foi maior que o número secreto!" << endl;
-    }
-    else {
-        cout << "Seu chute foi menor que o número secreto!" << endl;
-    }
+
+    cout << "****************" << endl;
+    cout << "*** END GAME ***" << endl;
+    cout << "****************" << endl;
 }
