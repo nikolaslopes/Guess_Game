@@ -49,5 +49,7 @@ int main () {
 
     cout << "Você acertou o número secreto em " << attempts << " tentativas!" << endl;
 
+    cout.precision(2);
+    cout << fixed;
     cout << "Sua pontuação foi de: " << score << " pontos" << endl;
 }
