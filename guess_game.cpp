@@ -6,11 +6,13 @@ int main () {
     cout << "* Welcome to the Guess Game *" << endl;
     cout << "*****************************" << endl;
 
-    const int SECRET_NUMBER = 69;
+    const int SECRET_NUMBER = 42;
 
     bool index = true;
 
     int attempts = 0;
+
+    double score = 1000.0;
 
     while (index) {
 
@@ -20,6 +22,9 @@ int main () {
         int shot_number;
         cout << "Qual o valor do seu chute?";
         cin >> shot_number;
+        
+        double score_lost = abs(shot_number - SECRET_NUMBER)/2.0;
+        score = score - score_lost;
 
         cout << "O valor do seu chute é: " << shot_number << endl;
 
@@ -43,4 +48,6 @@ int main () {
     cout << "****************" << endl;
 
     cout << "Você acertou o número secreto em " << attempts << " tentativas!" << endl;
+
+    cout << "Sua pontuação foi de: " << score << " pontos" << endl;
 }
