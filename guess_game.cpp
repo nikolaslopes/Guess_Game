@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main () {
@@ -23,8 +25,9 @@ int main () {
     else {
         attempts_number = 5;
     }
-
-    const int SECRET_NUMBER = 42;
+    
+    srand(time(NULL)); //essa função time vai dar o número de segundos desde 1970
+    const int SECRET_NUMBER = rand() % 100;
 
     bool index = true;
     int attempts = 0;
