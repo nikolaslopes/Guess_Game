@@ -46,45 +46,64 @@ int main()
     for (attempts = 1; attempts <= attempts_number; attempts++)
     {
 
-        cout << "Tentativa " << attempts << endl;
+        cout << "\nTentativa "
+             << attempts << "\n"
+             << endl;
 
         int shot_number;
-        cout << "Qual o valor do seu chute?";
+        cout << "\nQual o valor do seu chute?"
+             << endl;
         cin >> shot_number;
+        system("CLS");
 
         double score_lost = abs(shot_number - SECRET_NUMBER) / 2.0;
         score = score - score_lost;
 
-        cout << "O valor do seu chute é: " << shot_number << endl;
+        cout << "\nO valor do seu chute é: "
+             << shot_number << "\n"
+             << endl;
 
         bool correct_number = shot_number == SECRET_NUMBER;
         bool greater_number = shot_number > SECRET_NUMBER;
 
         if (correct_number)
         {
-            cout << "Parabéns, você acertou o número secreto!" << endl;
+            cout << "Parabéns, você acertou o número secreto!\n"
+                 << endl;
             index = false;
+            system("PAUSE");
+            system("CLS");
             break;
         }
         else if (greater_number)
         {
-            cout << "Seu chute foi maior que o número secreto!" << endl;
+            cout << "Seu chute foi maior que o número secreto!\n"
+                 << endl;
+            system("PAUSE");
+            system("CLS");
         }
         else
         {
-            cout << "Seu chute foi menor que o número secreto!" << endl;
+            cout << "Seu chute foi menor que o número secreto!\n"
+                 << endl;
+            system("PAUSE");
+            system("CLS");
         }
     }
 
     cout << "****************" << endl;
     cout << "*** END GAME ***" << endl;
     cout << "****************" << endl;
+    system("PAUSE");
+    system("CLS");
 
     if (index)
     {
-        cout << "*** ¯|_( ͡❛ ͜ʖ ͡❛)_/¯ *** " << endl;
-        cout << "*** Game Over ***" << endl;
-        cout << "*** Try Again ***" << endl;
+        cout << "\t\t******* ¯|_( ͡❛ ͜ʖ ͡❛)_/¯ ******" << endl;
+        cout << "\n\n\t\t\t******* Game Over *********" << endl;
+        system("PAUSE");
+        system("ClS");
+        cout << "\n\n\n******** Try Again ********" << endl;
     }
     else
     {
