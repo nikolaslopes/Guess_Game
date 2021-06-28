@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    system("PAUSE");
+    system("CLS");
     cout << "*****************************" << endl;
     cout << "* Welcome to the Guess Game *" << endl;
     cout << "*****************************" << endl;
