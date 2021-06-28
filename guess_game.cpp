@@ -10,6 +10,7 @@ int main()
     cout << "*****************************" << endl;
 
     system("PAUSE");
+    system("CLS");
 
     cout << "Escolha o seu nível de dificuldade: " << endl;
     cout << "Fácil (Press F), Médio (M) ou Difícil (D)" << endl;
