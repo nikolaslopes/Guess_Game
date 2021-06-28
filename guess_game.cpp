@@ -99,15 +99,17 @@ int main()
 
     if (index)
     {
-        cout << "\t\t******* ¯|_( ͡❛ ͜ʖ ͡❛)_/¯ ******" << endl;
-        cout << "\n\n\t\t\t******* Game Over *********" << endl;
+        cout << "\n\n\t\t******* ¯|_( ͡❛ ͜ʖ ͡❛)_/¯ ******" << endl;
+        cout << "\n\n\t\t******* Game Over *********" << endl;
         system("PAUSE");
         system("ClS");
-        cout << "\n\n\n******** Try Again ********" << endl;
+        cout << "\n\n\n******* Try Again *******\n\n\n"
+             << endl;
     }
     else
     {
-        cout << "Você acertou o número secreto em " << attempts << " tentativas!" << endl;
+        cout << "Você acertou o número secreto em " << attempts << " tentativas!\n\n"
+             << endl;
 
         cout.precision(2);
         cout << fixed;
