@@ -100,7 +100,8 @@ int main()
     if (index)
     {
         cout << "\n\n\t\t******* ¯|_( ͡❛ ͜ʖ ͡❛)_/¯ ******" << endl;
-        cout << "\n\n\t\t******* Game Over *********" << endl;
+        cout << "\n\n\t\t******* Game Over *********\n\n\n"
+             << endl;
         system("PAUSE");
         system("ClS");
         cout << "\n\n\n******* Try Again *******\n\n\n"
