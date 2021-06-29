@@ -2,7 +2,7 @@
   <h1><strong>	:brain: Guess Game :right_anger_bubble: </strong></h1>
 </div>
   <p>Um mini jogo para tentar adivinhar um número secreto aleatório</p>
-  <p>Para rodar o jogo, basta clonar o arquivo cpp para a sua máquina</p>
+  <p>Para rodar o jogo, basta clonar o arquivo cpp para a sua máquina e rodar pelo cmd</p>
 <br>
  <h1><strong>	:joystick: Regras </strong></h1>
 
