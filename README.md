@@ -6,7 +6,7 @@
 <br>
  <h1><strong>	:joystick: Regras </strong></h1>
 
-1. Escolha sua dificuldade: <br><br>
+1. Escolha sua dificuldade: <br>
 
  ----- Fácil (F) -> 15 tentativas <br>
  ----- Médio (M) -> 10 tentativas <br>
@@ -14,16 +14,18 @@
  
  <br>
  
-2. Após isso basta continuar tentar acertar o número secreto
+2. Após isso, basta tentar acertar o número secreto
 
 <br>
 
 3. No final do jogo, independente do resultado, você terá um placar para a contagem dos seus pontos
 
+<br>
 
-
+<h3>Bom jogo! :video_game:<h3>
  
- <br><br>
+ <br>
+  
 # 🚀 Techs
 - C++
     
