@@ -35,3 +35,6 @@
 
 - GitHub: [nikolaslopes](https://github.com/nikolaslopes) :octocat:
 - LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) :shipit:
+  
+  <br>
+<p>Thanks for your support :mage_man:<p>
